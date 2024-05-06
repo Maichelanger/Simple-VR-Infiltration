@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 1ab37d4994a58c748a5b20e1982c681a
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - openApp: {fileID: 8300000, guid: e59d83a114c4b624b922f19e08bdce72, type: 3}
+  - closeWindow: {fileID: 8300000, guid: 9bad2b99de1dcb14d867a638436b3294, type: 3}
+  - errorWindow: {fileID: 8300000, guid: 75b6cc8299f0e204e8d411d130c6d3ef, type: 3}
+  - click: {fileID: 8300000, guid: a4e04e29867f24244b3d27bf5c8b8333, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
