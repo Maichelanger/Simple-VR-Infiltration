@@ -3,56 +3,19 @@ using UnityEngine;
 
 public class KeycardWritterController : MonoBehaviour
 {
-    internal bool isWriting = false;
-    internal bool isKeycardIn = false;
+    private AudioSource audioSource;
 
-    private GameObject keycard;
-
-    public void WriteKeycard()
+    private void Start()
     {
-        if (CheckForKeycard())
-        {
-            StartCoroutine(WriteKeycardCoroutine());
-        }
-    }
-
-    public bool CheckForKeycard()
-    {
-        bool isIn = false;
-
-        if (isKeycardIn && keycard != null) isIn = true;
-
-        return isIn;
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Key"))
+        if (other.CompareTag("Key"))
         {
-            isKeycardIn = true;
-            keycard = other.gameObject;
+            other.GetComponent<KeycardController>().isKeycardActivated = true;
+            audioSource.Play();
         }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.gameObject.CompareTag("Key"))
-        {
-            isKeycardIn = false;
-            keycard = null;
-        }
-    }
-
-    IEnumerator WriteKeycardCoroutine()
-    {
-        isWriting = true;
-        yield return new WaitForSeconds(3);
-
-        if (CheckForKeycard())
-        {
-            keycard.GetComponent<KeycardController>().isKeycardActivated = true;
-        }
-
-        isWriting = false;
     }
 }

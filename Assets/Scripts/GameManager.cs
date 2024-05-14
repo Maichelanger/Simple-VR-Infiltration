@@ -21,7 +21,8 @@ public class GameManager : MonoBehaviour
 
         fadePanelAnim.SetTrigger("Play");
 
-        StartCoroutine(LateChangeScene());
+        //StartCoroutine(LateChangeScene());
+        Application.Quit();
     }
 
     IEnumerator LateChangeScene()
