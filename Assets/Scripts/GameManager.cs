@@ -1,11 +1,11 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     public bool isGameOver;
+    internal bool grabbableKeycard = false;
     [SerializeField] private Animator fadePanelAnim;
     [SerializeField] private float fadeDuration = 0.9f;
 

@@ -1231,8 +1231,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You can continue the story on flatscreen with "Simple VR Infiltration"
-    on my Itch.io page (Ludo-L)
+  m_text: 'You can check a few other game demos on my Itch.io page (Ludo-L), including
+    the "sequel" for this one:
+
+    "Simple Infiltration Game".'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2531fd355d218f7499fc9b022f86a3fd, type: 2}
   m_sharedMaterial: {fileID: 3705809452467001356, guid: 2531fd355d218f7499fc9b022f86a3fd, type: 2}
@@ -1259,15 +1261,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
+  m_fontSize: 15.15
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 18
+  m_fontSizeMin: 10
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
